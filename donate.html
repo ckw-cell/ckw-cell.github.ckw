@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>归档-AQUA</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/donate.css">
+    <link rel="stylesheet" id="index-white" href="">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <ul>
+                    <h3><a href="index.html">AQUA</a></h3>
+                    <li id="nav-ul-a1"><a href="javascript:void(0);">分类<span class="arrow-bottom"></span></a></li>
+                    <div class="nav-ul-div" id="nav-ul-div">
+                        <a href="javascript:void(0);" id="nav-sort1">
+                            <p>不巧，我在等你</p>
+                        </a>
+                        <a href="javascript:void(0);" id="nav-sort2">
+                            <p>曾经风花雪月</p>
+                        </a>
+                        <a href="javascript:void(0);" id="nav-sort3">
+                            <p>吟咏代码为师</p>
+                        </a>
+                        <a href="javascript:void(0);" id="nav-sort4">
+                            <p>唯学高为人师</p>
+                        </a>
+                        <a href="javascript:void(0);" id="nav-sort5">
+                            <p>立身却在生平</p>
+                        </a>
+                    </div>
+                    <li><a href="links.html">友链</a></li>
+                    <li><a href="archives.html">归档</a></li>
+                    <li><a href="guest.html">留言</a></li>
+                    <li><a href="donate.html">捐赠</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+                <a href="javascript:void(0);" id="nav-ul-a2" class="nav-span2">A</a>
+                <div class="nav-div2" id="nav-div2">
+                    <span class="arrow-top"></span>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="nav-div2-small" id="nav-div2-small">A</a>
+                            <span class="nav-div2-num" id="nav-div2-num"></span>
+                            <a href="javascript:void(0);" class="nav-div2-big" id="nav-div2-big">A</a>
+                        </li>
+                        <li class="nav-div2-li">
+                            <a href="javascript:void(0);" title="自动模式" class="nav-div2-color1"></a>
+                            <a href="javascript:void(0);" title="日间模式" class="nav-div2-color2"></a>
+                            <a href="javascript:void(0);" title="日落模式" class="nav-div2-color3"></a>
+                            <a href="javascript:void(0);" title="夜间模式" class="nav-div2-color4"></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="nav-div2-span1">Serif</a>
+                            <a href="javascript:void(0);" class="nav-div2-span2">Sans Serif</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="nav-span1" id="nav-span1"><i class="iconfont">&#xe63d;</i></a>
+                <div class="nav-div1" id="nav-div1">
+                    <span class="nav-div1-span1">
+                        <a href="javascript:void(0);">
+                            <i class="iconfont">&#xe63d;</i>
+                        </a>
+                    </span>
+                    <input type="text" id="nav-input" class="nav-input" placeholder="搜索..." onkeypress="database(function (text) {
+                        var archives = JSON.parse(text);
+                        console.log(archives);
+                        EnterPress(event, archives);
+                    }, './database/archives.json')">
+                </div>
+            </div>
+        </nav>
+        <h1>捐赠</h1>
+        <p>2018 年 01 月 31 日</p>
+    </header>
+
+    <!-- 手机窗口菜单栏 -->
+    <div id="menu-btn" class="menu-btn">MENU</div>
+    <div class="menu" id="menu">
+        <a href="about.html" id="menu-a" class="menu-a">
+            <img class="about1" src="img/about.jpg" width="100px" height="100px" style="border-radius: 50%;">
+        </a>
+        <input class="menu-input" id="menu-input" type="text" placeholder="搜索..." onkeypress="EnterPress(event)">
+        <button class="search-btn" id="search-btn"><i class="iconfont">&#xe63d;</i></button>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li id="menu-ul-a1"><a href="javascript:void(0);">分类</a></li>
+            <div class="menu-ul-div" id="menu-ul-div">
+                <a href="javascript:void(0);" id="menu-sort1">
+                    <p>不巧，我在等你</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort2">
+                    <p>曾经风花雪月</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort3">
+                    <p>吟咏代码为师</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort4">
+                    <p>唯学高为人师</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort5">
+                    <p>立身却在生平</p>
+                </a>
+            </div>
+            <li><a href="links.html">友链</a></li>
+            <li><a href="archives.html">归档</a></li>
+            <li><a href="guest.html">留言</a></li>
+            <li><a href="donate.html">捐赠</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+        <div class="menu-bottom" id="menu-bottom">
+            <a href="javascript:void(0);" id="nav-ul-a3" class="menu-span2">
+                <i class="iconfont">&#xe61c;</i>
+            </a>
+            <a href="javascript:void(0);" id="menu-ul-a2" class="menu-span2">
+                A
+            </a>
+        </div>
+        <div class="menu-div2" id="menu-div2">
+            <span class="arrow-top1"></span>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="nav-div2-small" id="menu-div2-small">A</a>
+                    <span class="nav-div2-num" id="menu-div2-num">100%</span>
+                    <a href="javascript:void(0);" class="nav-div2-big" id="menu-div2-big">A</a>
+                </li>
+                <li class="nav-div2-li">
+                    <a href="javascript:void(0);" title="自动模式" class="nav-div2-color1"></a>
+                    <a href="javascript:void(0);" title="日间模式" class="nav-div2-color2"></a>
+                    <a href="javascript:void(0);" title="日落模式" class="nav-div2-color3"></a>
+                    <a href="javascript:void(0);" title="夜间模式" class="nav-div2-color4"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="nav-div2-span1">Serif</a>
+                    <a href="javascript:void(0);" class="nav-div2-span2">Sans Serif</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="body2">
+        <p>一直谋划着这个页面，就是为了给想请我吃包辣条的老铁们一个机会。</p>
+        <p class="body2-p">平生无啥爱好，乡下人不爱喝咖啡，就爱吃辣条。各位的捐赠不出意外是满足了我的口腹之欲，少部分会投入网站的可持续发展，如果还有点多的，我想我会在 kindle
+            上买点书来看看，以提高胡诌的能力。</p>
+        <p>可用微信、支付宝、QQ 扫描下列二维码，捐赠时望备注相关信息，以便略表感激之情！</p>
+    </div>
+
+    <div class="img">
+        <img src="img/donate1.png">
+        <img src="img/donate2.png">
+        <img src="img/donate3.png">
+    </div>
+
+    <div class="label">
+        <p>打赏列表</p>
+        <div class="label-ul">
+            <ul>
+                <li>时间</li>
+                <li>金额</li>
+                <li>渠道</li>
+                <li>备注</li>
+            </ul>
+            <ul>
+                <li>2018-01-31</li>
+                <li>￥6.66</li>
+                <li>微信支付</li>
+                <li>西枫里</li>
+            </ul>
+            <ul>
+                <li>2018-04-12</li>
+                <li>￥1.00</li>
+                <li>支付宝</li>
+                <li>兽性大发</li>
+            </ul>
+            <ul>
+                <li>2018-04-16</li>
+                <li>￥2.33</li>
+                <li>微信支付</li>
+                <li>木月</li>
+            </ul>
+            <ul>
+                <li>2018-05-12</li>
+                <li>￥2.33</li>
+                <li>QQ 钱包</li>
+                <li>岳泽以</li>
+            </ul>
+            <ul>
+                <li>2018-05-27</li>
+                <li>￥6.66</li>
+                <li>微信支付</li>
+                <li>Anbrey</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="comment">
+        <p>添加新评论</p>
+        <textarea class="comment-input" id="textarea" placeholder="在这里输入你的评论..."></textarea>
+        <span class="comment-span1" id="comment-span1"></span>
+        <i class="arrow-top1" id="comment-top1"></i>
+        <div class="comment-inputs">
+            <input type="text" id="username" placeholder="称呼*">
+            <span class="comment-span2" id="comment-span2"></span>
+            <i class="arrow-top2" id="comment-top2"></i>
+            <input type="text" id="email" placeholder="电子邮件*">
+            <span class="comment-span3" id="comment-span3"></span>
+            <i class="arrow-top3" id="comment-top3"></i>
+            <input type="text" placeholder="网站">
+        </div>
+        <div class="comment-OwO">
+            <span class="OwO">OωO</span>
+            <span>
+                <input type="checkbox" id="checkbox" class="comment-checkbox">
+                <label class="comment-label" for="checkbox">不接收回复邮件通知</label>
+            </span>
+        </div>
+        <button class="comment-submit">提交评论</button>
+
+
+        <div class="comment-num" id="comment-num">
+
+        </div>
+        <div class="comment-list" id="comment-list">
+        </div>
+    </div>
+
+
+    <div class="uptop" id="up-top">
+        <i class="down"></i>
+    </div>
+
+    <footer>
+        <p>Copyright © 2021<span><a href="index.html">雨落泪尽</a></span></p>
+        <p><span><a href="">苏 ICP 备 17028566 号</a></span> • Powered by <span><a href="">Typecho</a></span> • Theme
+            <span><a href="">Mirages</a></span></p>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/verify.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/comment.js"></script>
+</body>
+
+</html>

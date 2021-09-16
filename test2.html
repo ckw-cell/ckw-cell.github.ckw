@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box {
+            width: 300px;
+            height: 300px;
+            background: red;
+            display: flex;
+            position: absolute;
+            left: -250px;
+            top: 100px;
+        }
+
+        p {
+            width: 250px;
+            height: 300px;
+            font-size: 24px;
+            text-indent: 2em;
+        }
+
+        span {
+            display: block;
+            width: 50px;
+            height: 300px;
+            background: green;
+            font-size: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum asperiores autem fuga animi delectus mollitia
+            ipsam amet harum culpa tenetur soluta dicta placeat nemo veritatis quas quam in aliquam est.</p>
+        <span id="span1">侧边栏=》</span>
+    </div>
+    <script type="text/javascript">
+        var oSpan = document.getElementById("span1");
+        var oBox = document.getElementById("box");
+        var timer = null;
+        oBox.onmouseover = function () {
+            startMove(oBox, {
+                left: 0
+            });
+        }
+        oBox.onmouseout = function () {
+            startMove(oBox, {
+                left: -250
+            })
+        }
+    </script>
+</body>
+
+</html>

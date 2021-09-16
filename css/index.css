@@ -1,0 +1,96 @@
+.bodys {
+    width: 929px;
+    margin: 0 auto;
+}
+
+.bodys a {
+    height: 248px;
+    width: 100%;
+    padding: 100px 0;
+    border-radius: 5px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    background: aqua;
+    margin-bottom: 53px;
+}
+.bodys a:hover{
+    transform: scale(1.05);
+    transition: 500ms;
+}
+
+.bodys a p:first-of-type {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.page{
+    width: 929px;
+    height: 42px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-btn1{
+    width: 134px;
+    height: 42px;
+    border-radius: 21px;
+    opacity: 1;
+    box-sizing: border-box;
+    background: #2C2A2A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border: #FFFFFF 1px solid;
+}
+
+.page-btn1:hover{
+    background: white;
+    color: black;
+    transition: 500ms;
+}
+
+.page-btn2{
+    width: 134px;
+    height: 42px;
+    border-radius: 21px;
+    opacity: 1;
+    background: #2C2A2A;
+    box-sizing: border-box;
+    color: white;
+    visibility: visible;
+    border: none;
+    cursor: pointer;
+    border: #FFFFFF 1px solid;
+}
+
+.page-btn2:hover{
+    background: white;
+    color: black;
+    transition: 500ms;
+}
+
+
+@media (max-width:1210px){
+    .bodys{
+        width: 689px;
+    }
+    .page{
+        width: 689px;
+    }
+}
+
+
+
+@media (max-width:770px){
+    .bodys{
+        width: 100%;
+    }
+    
+    .page{
+        width: 100%;
+    }
+}

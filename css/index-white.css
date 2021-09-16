@@ -1,0 +1,340 @@
+body {
+    background: white;
+}
+
+header {
+    background: #FAFAFA;
+}
+
+header h1 {
+    color: black;
+}
+
+header p {
+    color: black;
+}
+
+.menu {
+    background: #FAFAFA;
+}
+
+.menu ul li:hover {
+    background: #EFEFEF;
+}
+
+.menu ul li a {
+    color: #333333;
+}
+
+.menu ul li a:hover {
+    color: #333333;
+}
+
+.menu-input {
+    background: #FFFFFF;
+}
+
+.menu-bottom {
+    background: #FFFFFF;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border-bottom: none;
+}
+
+.nav ul h3 a {
+    color: black;
+}
+
+.nav ul li a {
+    color: black;
+}
+
+.nav ul li a:hover {
+    color: #3B3A39;
+}
+
+.nav ul li a:hover .arrow-bottom {
+    border-top: 5px solid #3B3A39;
+}
+
+.arrow-bottom {
+    border-top: 5px solid black;
+}
+
+.arrow-top {
+    border-bottom: 8px solid #F0F0F0;
+}
+
+.nav-ul-div {
+    background: #FFFFFF;
+}
+
+.nav-ul-div p {
+    color: black;
+}
+
+.nav-ul-div a:hover p {
+    background: #F8F9FA;
+}
+
+.nav-span1 {
+    background-color: #F0F0F0;
+}
+
+.nav-span1:hover {
+    background-color: #2C2A2A;
+}
+
+.nav-span1:hover .iconfont {
+    color: #CBCBCB;
+}
+
+.nav-span1 i {
+    color: black;
+}
+
+.nav-div1 input {
+    color: #2C2A2A;
+}
+
+.nav-input {
+    background: #F0F0F0;
+}
+
+.nav-div1-span1 {
+    background-color: #F0F0F0;
+}
+
+.nav-div1-span1:hover {
+    background-color: #2C2A2A;
+}
+
+.nav-div1-span1:hover .iconfont {
+    color: #CBCBCB;
+}
+
+.nav-div1-span1 i {
+    color: black;
+}
+
+.nav-span2 {
+    background-color: #F0F0F0;
+    color: #5d5d5d;
+}
+
+.nav-span2:hover {
+    background-color: #333333;
+    color: white;
+}
+
+
+
+.nav-div2 {
+    border: 8px #F0F0F0 solid;
+    background: white;
+}
+
+
+.nav-div2 ul li {
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.nav-div2-num {
+    background: #F0F0F0;
+}
+
+.nav-div2 ul li a.nav-div2-span1 {
+    color: white;
+    font-size: 12px;
+}
+
+.nav-div2 ul li a.nav-div2-span2 {
+    font-size: 16px;
+}
+
+.nav-div2 ul li a.nav-div2-small {
+    color: #A4A4A4;
+}
+
+.nav-div2 ul li a.nav-div2-big {
+    color: black;
+}
+
+.body h2 {
+    color: black;
+}
+
+.body ul li a {
+    border-bottom: 1px dashed #EEEEEE;
+}
+
+.comment-input {
+    background-color: white;
+    border: 2px solid #ECECEC;
+}
+
+.comment-inputs input {
+    background-color: white;
+    border: 2px solid #ECECEC;
+}
+
+.OwO {
+    border: 2px solid #ECECEC;
+}
+
+.comment-label {
+    color: #7C7C7C;
+}
+
+footer p {
+    color: black;
+}
+
+.body1 h2 {
+    color: black;
+}
+
+.body1 ul li a {
+    font-size: 15px;
+    color: black;
+}
+
+.body1 ul li span {
+    color: #626160;
+    margin-right: 16px;
+}
+
+.body1 ul li:hover {
+    background: #EEEEEE;
+}
+
+.body p {
+    color: black;
+}
+
+.body2 {
+    background: white;
+    color: #686868;
+    border-left: #DDDDDD 5px solid;
+}
+
+.label p {
+    color: black;
+}
+
+.label-ul {
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+}
+
+.label-ul ul li {
+    color: black;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.label-ul ul:nth-child(2n-1) {
+    background: #F8F8F8;
+}
+
+.title p {
+    color: black;
+}
+
+.uptop {
+    background: white;
+}
+
+.page-btn1 {
+    background: white;
+    color: black;
+    border: #333333 1px solid;
+}
+
+.page-btn1:hover {
+    background: #333333;
+    color: white;
+}
+
+.page-btn2 {
+    background: white;
+    color: black;
+    border: #333333 1px solid;
+}
+
+.page-btn2:hover {
+    background: #333333;
+    color: white;
+}
+
+footer {
+    background: #FAFAFA;
+}
+
+.menu-btn {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #6E338F;
+    border: 1px solid #333333;
+}
+
+.menu-btn:hover {
+    background-color: #333333;
+    color: white;
+    transition: 500ms;
+}
+
+.menu-input:focus {
+    background: #EFEFEF;
+}
+
+.search-btn i {
+    color: #555555;
+}
+
+.menu-div2 ul li a.nav-div2-small {
+    color: #333333;
+}
+
+.menu-div2 ul li a.nav-div2-big {
+    color: #333333;
+}
+
+.menu-div2 {
+    border: 8px #F0F0F0 solid;
+    background: white;
+}
+
+.menu-div2 ul li {
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.menu-div2 ul li:hover {
+    background: white;
+    cursor: default;
+}
+
+.menu-span2 {
+    background-color: #F0F0F0;
+    color: #2C2A2A;
+}
+
+.menu-span2:hover {
+    background-color: #2C2A2A;
+    color: white;
+}
+
+.menu-ul-div {
+    background: #F0F0F0;
+}
+
+.menu-ul-div p {
+    color: black;
+    background: #FFFFFF;
+}
+
+.menu-ul-div a:hover p {
+    background: #FFFFFF;
+}

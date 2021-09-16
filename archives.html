@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>归档-AQUA</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/archives.css">
+    <link rel="stylesheet" id="index-white" href="">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <ul>
+                    <h3><a href="index.html">AQUA</a></h3>
+                    <li id="nav-ul-a1"><a href="javascript:void(0);">分类<span class="arrow-bottom"></span></a></li>
+                    <div class="nav-ul-div" id="nav-ul-div">
+                        <a href="javascript:void(0);" id="nav-sort1">
+                            <p>不巧，我在等你</p>
+                        </a>
+                        <a href="javascript:void(0);" id="nav-sort2">
+                            <p>曾经风花雪月</p>
+                        </a>
+                        <a href="javascript:void(0);" id="nav-sort3">
+                            <p>吟咏代码为师</p>
+                        </a>
+                        <a href="javascript:void(0);" id="nav-sort4">
+                            <p>唯学高为人师</p>
+                        </a>
+                        <a href="javascript:void(0);" id="nav-sort5">
+                            <p>立身却在生平</p>
+                        </a>
+                    </div>
+                    <li><a href="links.html">友链</a></li>
+                    <li><a href="archives.html">归档</a></li>
+                    <li><a href="guest.html">留言</a></li>
+                    <li><a href="donate.html">捐赠</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+                <a href="javascript:void(0);" id="nav-ul-a2" class="nav-span2">A</a>
+                <div class="nav-div2" id="nav-div2">
+                    <span class="arrow-top"></span>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="nav-div2-small" id="nav-div2-small">A</a>
+                            <span class="nav-div2-num" id="nav-div2-num"></span>
+                            <a href="javascript:void(0);" class="nav-div2-big" id="nav-div2-big">A</a>
+                        </li>
+                        <li class="nav-div2-li">
+                            <a href="javascript:void(0);" title="自动模式" class="nav-div2-color1"></a>
+                            <a href="javascript:void(0);" title="日间模式" class="nav-div2-color2"></a>
+                            <a href="javascript:void(0);" title="日落模式" class="nav-div2-color3"></a>
+                            <a href="javascript:void(0);" title="夜间模式" class="nav-div2-color4"></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="nav-div2-span1">Serif</a>
+                            <a href="javascript:void(0);" class="nav-div2-span2">Sans Serif</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="nav-span1" id="nav-span1"><i class="iconfont">&#xe63d;</i></a>
+                <div class="nav-div1" id="nav-div1">
+                    <span class="nav-div1-span1">
+                        <a href="javascript:void(0);">
+                            <i class="iconfont">&#xe63d;</i>
+                        </a>
+                    </span>
+                    <input type="text" id="nav-input" class="nav-input" placeholder="搜索..." onkeypress="database(function (text) {
+                        var archives = JSON.parse(text);
+                        console.log(archives);
+                        EnterPress(event, archives);
+                    }, './database/archives.json')">
+                </div>
+            </div>
+        </nav>
+        <h1>归档</h1>
+        <p>2017 年 05 月 26 日</p>
+    </header>
+
+    <!-- 手机窗口菜单栏 -->
+    <div id="menu-btn" class="menu-btn">MENU</div>
+    <div class="menu" id="menu">
+        <a href="about.html" id="menu-a" class="menu-a">
+            <img class="about1" src="img/about.jpg" width="100px" height="100px" style="border-radius: 50%;">
+        </a>
+        <input class="menu-input" id="menu-input" type="text" placeholder="搜索..." onkeypress="EnterPress(event)">
+        <button class="search-btn" id="search-btn"><i class="iconfont">&#xe63d;</i></button>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li id="menu-ul-a1"><a href="javascript:void(0);">分类</a></li>
+            <div class="menu-ul-div" id="menu-ul-div">
+                <a href="javascript:void(0);" id="menu-sort1">
+                    <p>不巧，我在等你</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort2">
+                    <p>曾经风花雪月</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort3">
+                    <p>吟咏代码为师</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort4">
+                    <p>唯学高为人师</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort5">
+                    <p>立身却在生平</p>
+                </a>
+            </div>
+            <li><a href="links.html">友链</a></li>
+            <li><a href="archives.html">归档</a></li>
+            <li><a href="guest.html">留言</a></li>
+            <li><a href="donate.html">捐赠</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+        <div class="menu-bottom" id="menu-bottom">
+            <a href="javascript:void(0);" id="nav-ul-a3" class="menu-span2">
+                <i class="iconfont">&#xe61c;</i>
+            </a>
+            <a href="javascript:void(0);" id="menu-ul-a2" class="menu-span2">
+                A
+            </a>
+        </div>
+        <div class="menu-div2" id="menu-div2">
+            <span class="arrow-top1"></span>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="nav-div2-small" id="menu-div2-small">A</a>
+                    <span class="nav-div2-num" id="menu-div2-num">100%</span>
+                    <a href="javascript:void(0);" class="nav-div2-big" id="menu-div2-big">A</a>
+                </li>
+                <li class="nav-div2-li">
+                    <a href="javascript:void(0);" title="自动模式" class="nav-div2-color1"></a>
+                    <a href="javascript:void(0);" title="日间模式" class="nav-div2-color2"></a>
+                    <a href="javascript:void(0);" title="日落模式" class="nav-div2-color3"></a>
+                    <a href="javascript:void(0);" title="夜间模式" class="nav-div2-color4"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="nav-div2-span1">Serif</a>
+                    <a href="javascript:void(0);" class="nav-div2-span2">Sans Serif</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="body1">
+        <h2>标签云</h2>
+
+        <ul>
+            <h2>2021 年 4 月</h2>
+            <li><a href=""><span>04-03</span>2021 年度阅读计划</a></li>
+        </ul>
+        <ul>
+            <h2>2021 年 1 月</h2>
+            <li><a href=""><span>01-27</span>余早合集（篇三）</a></li>
+        </ul>
+        <ul>
+            <h2>2020 年 5 月</h2>
+            <li><a href=""><span>05-26</span>尘埃落定</a></li>
+            <li><a href=""><span>05-18</span>十字路口，更加迷茫</a></li>
+        </ul>
+        <ul>
+            <h2>2020 年 3 月</h2>
+            <li><a href=""><span>03-03</span>余早合集（篇二）</a></li>
+        </ul>
+        <ul>
+            <h2>2020 年 1 月</h2>
+            <li><a href=""><span>01-13</span>我的 2020，未完待续</a></li>
+        </ul>
+        <ul>
+            <h2>2019 年 8 月</h2>
+            <li><a href=""><span>08-17</span>周末闲谈（四）</a></li>
+        </ul>
+        <ul>
+            <h2>2019 年 6 月</h2>
+            <li><a href=""><span>06-02</span>实习月记</a></li>
+        </ul>
+        <ul>
+            <h2>2019 年 3 月</h2>
+            <li><a href=""><span>03-29</span>游戏之我见</a></li>
+        </ul>
+        <ul>
+            <h2>2019 年 2 月</h2>
+            <li><a href=""><span>02-17</span>一只特立独行的猪</a></li>
+        </ul>
+        <ul>
+            <h2>2018 年 12 月</h2>
+            <li><a href=""><span>12-18</span>余早合集（篇一）</a></li>
+        </ul>
+        <ul>
+            <h2>2018 年 10 月</h2>
+            <li><a href=""><span>10-13</span>拾月</a></li>
+        </ul>
+        <ul>
+            <h2>2018 年 8 月</h2>
+            <li><a href=""><span>08-28</span> 也谈博客</a></li>
+            <li><a href=""><span>08-26</span>入手树莓派 3B+</a></li>
+            <li><a href=""><span>08-15</span>忽而今夏，仍记那年悲欢</a></li>
+            <li><a href=""><span>08-13</span>最好的朋友在身边</a></li>
+        </ul>
+        <ul>
+            <h2>2018 年 7 月</h2>
+            <li><a href=""><span>07-16</span>我的世界杯元年</a></li>
+            <li><a href=""><span>07-03</span>一款大气简洁的 typecho 主题：overflow</a></li>
+        </ul>
+        <ul>
+            <h2>2018 年 6 月</h2>
+            <li><a href=""><span>06-17</span>父亲节：致父亲的一封信</a></li>
+            <li><a href=""><span>06-15</span>再见，体育课</a></li>
+            <li><a href=""><span>06-10</span>周末闲谈（三）</a></li>
+        </ul>
+        <ul>
+            <h2>2018 年 5 月</h2>
+            <li><a href=""><span>05-26</span>雨落泪尽博客的发展历程</a></li>
+            <li><a href=""><span>05-01</span>周末闲谈（二）</a></li>
+        </ul>
+        <ul>
+            <h2>2018 年 4 月</h2>
+            <li><a href=""><span>04-15</span>周末闲谈（一）</a></li>
+            <li><a href=""><span>04-06</span>人间四月天</a></li>
+        </ul>
+        <ul>
+            <h2>2018 年 3 月</h2>
+            <li><a href=""><span>03-18</span>驺山古汐，微博大 V</a></li>
+        </ul>
+        <ul>
+            <h2>2018 年 2 月</h2>
+            <li><a href=""><span>02-27</span>学习神器推荐：实验楼与 Cloud9</a></li>
+            <li><a href=""><span>02-05</span>一款清新的 typecho 主题：Optica</a></li>
+        </ul>
+        <ul>
+            <h2>2018 年 1 月</h2>
+            <li><a href=""><span>01-30</span>为何以问为耻？</a></li>
+            <li><a href=""><span>01-15</span>一月纪事</a></li>
+        </ul>
+        <ul>
+            <h2>2017 年 12 月</h2>
+            <li><a href=""><span>12-27</span>12-31 写在唯一的一个 2017 年</a></li>
+            <li><a href=""><span>12-22</span>讲课初体验</a></li>
+            <li><a href=""><span>12-09</span>请记住我</a></li>
+        </ul>
+        <ul>
+            <h2>2017 年 11 月</h2>
+            <li><a href=""><span>11-30</span>咿咿呀呀不知所云</a></li>
+            <li><a href=""><span>11-26</span>黑五薅羊毛 ——20 美元</a></li>
+            <li><a href=""><span>11-23</span>带着数字与玫瑰旅行</a></li>
+            <li><a href=""><span>11-18</span>孟冬寒气至</a></li>
+            <li><a href=""><span>11-07</span>又一次组织班会</a></li>
+            <li><a href=""><span>11-03</span>我当老师的这一年</a></li>
+        </ul>
+        <ul>
+            <h2>2017 年 10 月</h2>
+            <li><a href=""><span>10-28</span>告别赛门铁克，拥抱新证书</a></li>
+            <li><a href=""><span>10-23</span>利用 excel 批量创建不同名文件夹</a></li>
+            <li><a href=""><span>10-12</span>利用 miniflux 搭建自用 feed 阅读器</a></li>
+            <li><a href=""><span>10-10</span>亲爱的秦大叔回来了！</a></li>
+            <li><a href=""><span>10-06</span>十年</a></li>
+        </ul>
+        <ul>
+            <h2>2017 年 9 月</h2>
+            <li><a href=""><span>9-25</span>一生只够爱一人</a></li>
+            <li><a href=""><span>9-16</span>未完待续，不是结局！</a></li>
+            <li><a href=""><span>9-11</span>为什么要感谢老师？</a></li>
+            <li><a href=""><span>9-06</span>网购开个发票就这么麻烦？</a></li>
+            <li><a href=""><span>9-04</span>手机套餐换不换？</a></li>
+            <li><a href=""><span>9-02</span>开启新域名：1998.su <已弃用></a></li>
+        </ul>
+        <ul>
+            <h2>2017 年 8 月</h2>
+            <li><a href=""><span>8-29</span>差点以为要别了，我的腾讯云</a></li>
+            <li><a href=""><span>8-19</span>萍水相逢，后会有期</a></li>
+            <li><a href=""><span>8-13</span>解决腾讯网址报毒问题</a></li>
+            <li><a href=""><span>8-02</span>烟不抽，酒两盅</a></li>
+        </ul>
+        <ul>
+            <h2>2017 年 7 月</h2>
+            <li><a href=""><span>7-26</span>暑假兼职二三事</a></li>
+            <li><a href=""><span>7-20</span>你有兴趣，我给你一个机会</a></li>
+            <li><a href=""><span>7-16</span>“可信网站” 真的可信吗？</a></li>
+            <li><a href=""><span>7-13</span>搭建 WAMP 本地开发环境</a></li>
+            <li><a href=""><span>7-10</span>教书匠不是个简单活儿</a></li>
+            <li><a href=""><span>7-02</span>小结：写在大一结束</a></li>
+        </ul>
+        <ul>
+            <h2>2017 年 6 月</h2>
+            <li><a href=""><span>6-27</span>有喜欢我博客这套主题的嘛？</a></li>
+            <li><a href=""><span>6-21</span>什么时候，我们才能不只看重结果</a></li>
+            <li><a href=""><span>6-16</span>每天都是二三琐事</a></li>
+            <li><a href=""><span>6-09</span>一激动，就把老师们都踢出了班级群</a></li>
+            <li><a href=""><span>6-07</span>果然，我们都成了历史</a></li>
+            <li><a href=""><span>6-06</span>真想彻底放弃 ssl 加密传输了</a></li>
+            <li><a href=""><span>6-03</span>努力，不也是能力吗。</a></li>
+            <li><a href=""><span>6-01</span>在这世界的角落</a></li>
+        </ul>
+        <ul>
+            <h2>2017 年 5 月</h2>
+            <li><a href=""><span>5-31</span>所谓教养，就是不将个人习惯强加于他人。</a></li>
+            <li><a href=""><span>5-30</span>端午，打开排油烟机的管道</a></li>
+            <li><a href=""><span>5-29</span>终于给小博客的电脑端穿上衣服。</a></li>
+            <li><a href=""><span>5-28</span>你还会说方言吗？</a></li>
+            <li><a href=""><span>5-28</span>折腾半天小绿锁，也能装逼了</a></li>
+            <li><a href=""><span>5-27</span>本博客的 cdn 加速配备，选择你最快的哦</a></li>
+            <li><a href=""><span>5-27</span>数据恢复，独缺评论</a></li>
+            <li><a href=""><span>5-26</span>博客重装，略感烦躁。</a></li>
+            <li><a href=""><span>5-26</span>欢迎使用 Typecho</a></li>
+            <li><a href=""><span>5-25</span>四十万票房着实委屈：电影《启功》</a></li>
+            <li><a href=""><span>5-24</span>折腾 CDN，给小水管减减压</a></li>
+            <li><a href=""><span>5-23</span>第一份教案 —— 初识华容道，巧解过五关</a></li>
+            <li><a href=""><span>5-23</span>历经 16 天，备案号终于下来了。</a></li>
+            <li><a href=""><span>5-08</span>各自终究是过客，留不下一个名字</a></li>
+            <li><a href=""><span>5-08</span>我是雨落泪尽，亦是三世轮回……</a></li>
+            <li><a href=""><span>5-08</span>曾经有个 wap 社区，叫 e 界</a></li>
+            <li><a href=""><span>5-08</span>本博客源码及主题分享 ——Typecho&Optica for Typecho</a></li>
+            <li><a href=""><span>5-08</span>Hello,World. 不巧，我也在等你。</a></li>
+        </ul>
+    </div>
+
+
+    <div class="uptop" id="up-top">
+        <i class="down"></i>
+    </div>
+
+
+    <footer>
+        <p>Copyright © 2021<span><a href="index.html">雨落泪尽</a></span></p>
+        <p><span><a href="">苏 ICP 备 17028566 号</a></span> • Powered by <span><a href="">Typecho</a></span> • Theme
+            <span><a href="">Mirages</a></span></p>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

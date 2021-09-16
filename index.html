@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQUA</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" id="index-white" href="">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <img src="img/banner.jpg" width="1920px" id="header-img" class="header-img">
+            <nav>
+                <div class="nav">
+                    <ul>
+                        <h3><a href="index.html">AQUA</a></h3>
+                        <li id="nav-ul-a1"><a href="javascript:void(0);">分类<span class="arrow-bottom"></span></a></li>
+                        <div class="nav-ul-div" id="nav-ul-div">
+                            <a href="javascript:void(0);" id="nav-sort1">
+                                <p>不巧，我在等你</p>
+                            </a>
+                            <a href="javascript:void(0);" id="nav-sort2">
+                                <p>曾经风花雪月</p>
+                            </a>
+                            <a href="javascript:void(0);" id="nav-sort3">
+                                <p>吟咏代码为师</p>
+                            </a>
+                            <a href="javascript:void(0);" id="nav-sort4">
+                                <p>唯学高为人师</p>
+                            </a>
+                            <a href="javascript:void(0);" id="nav-sort5">
+                                <p>立身却在生平</p>
+                            </a>
+                        </div>
+                        <li><a href="links.html">友链</a></li>
+                        <li><a href="archives.html">归档</a></li>
+                        <li><a href="guest.html">留言</a></li>
+                        <li><a href="donate.html">捐赠</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                    <a href="javascript:void(0);" id="nav-ul-a2" class="nav-span2">A</a>
+                    <div class="nav-div2" id="nav-div2">
+                        <span class="arrow-top"></span>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" class="nav-div2-small" id="nav-div2-small">A</a>
+                                <span class="nav-div2-num" id="nav-div2-num"></span>
+                                <a href="javascript:void(0);" class="nav-div2-big" id="nav-div2-big">A</a>
+                            </li>
+                            <li class="nav-div2-li">
+                                <a href="javascript:void(0);" title="自动模式" class="nav-div2-color1"></a>
+                                <a href="javascript:void(0);" title="日间模式" class="nav-div2-color2"></a>
+                                <a href="javascript:void(0);" title="日落模式" class="nav-div2-color3"></a>
+                                <a href="javascript:void(0);" title="夜间模式" class="nav-div2-color4"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="nav-div2-span1">Serif</a>
+                                <a href="javascript:void(0);" class="nav-div2-span2">Sans Serif</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0);" class="nav-span1" id="nav-span1"><i class="iconfont">&#xe63d;</i></a>
+                    <div class="nav-div1" id="nav-div1">
+                        <span class="nav-div1-span1">
+                            <a href="javascript:void(0);">
+                                <i class="iconfont">&#xe63d;</i>
+                            </a>
+                        </span>
+                        <input type="text" id="nav-input" class="nav-input" placeholder="搜索..." onkeypress="database(function (text) {
+                            var archives = JSON.parse(text);
+                            console.log(archives);
+                            EnterPress(event, archives);
+                        }, './database/archives.json')">
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+
+    <!-- 手机窗口菜单栏 -->
+    <div id="menu-btn" class="menu-btn">MENU</div>
+    <div class="menu" id="menu">
+        <a href="about.html" id="menu-a" class="menu-a">
+            <img class="about1" src="img/about.jpg" width="100px" height="100px" style="border-radius: 50%;">
+        </a>
+        <input class="menu-input" id="menu-input" type="text" placeholder="搜索..." onkeypress="EnterPress(event)">
+        <button class="search-btn" id="search-btn"><i class="iconfont">&#xe63d;</i></button>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li id="menu-ul-a1"><a href="javascript:void(0);">分类</a></li>
+            <div class="menu-ul-div" id="menu-ul-div">
+                <a href="javascript:void(0);" id="menu-sort1">
+                    <p>不巧，我在等你</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort2">
+                    <p>曾经风花雪月</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort3">
+                    <p>吟咏代码为师</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort4">
+                    <p>唯学高为人师</p>
+                </a>
+                <a href="javascript:void(0);" id="menu-sort5">
+                    <p>立身却在生平</p>
+                </a>
+            </div>
+            <li><a href="links.html">友链</a></li>
+            <li><a href="archives.html">归档</a></li>
+            <li><a href="guest.html">留言</a></li>
+            <li><a href="donate.html">捐赠</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+        <div class="menu-bottom" id="menu-bottom">
+            <a href="javascript:void(0);" id="nav-ul-a3" class="menu-span2">
+                <i class="iconfont">&#xe61c;</i>
+            </a>
+            <a href="javascript:void(0);" id="menu-ul-a2" class="menu-span2">
+                A
+            </a>
+        </div>
+        <div class="menu-div2" id="menu-div2">
+            <span class="arrow-top1"></span>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="nav-div2-small" id="menu-div2-small">A</a>
+                    <span class="nav-div2-num" id="menu-div2-num">100%</span>
+                    <a href="javascript:void(0);" class="nav-div2-big" id="menu-div2-big">A</a>
+                </li>
+                <li class="nav-div2-li">
+                    <a href="javascript:void(0);" title="自动模式" class="nav-div2-color1"></a>
+                    <a href="javascript:void(0);" title="日间模式" class="nav-div2-color2"></a>
+                    <a href="javascript:void(0);" title="日落模式" class="nav-div2-color3"></a>
+                    <a href="javascript:void(0);" title="夜间模式" class="nav-div2-color4"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="nav-div2-span1">Serif</a>
+                    <a href="javascript:void(0);" class="nav-div2-span2">Sans Serif</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="bodys" class="bodys">
+
+    </div>
+
+
+    <div id="page" class="page">
+        <button id="page-btn1" class="page-btn1">上一页</button>
+        <button id="page-btn2" class="page-btn2">下一页</button>
+    </div>
+
+
+    <div class="uptop" id="up-top">
+        <i class="down"></i>
+    </div>
+
+    <footer>
+        <p>Copyright © 2021<span><a href="index.html">雨落泪尽</a></span></p>
+        <p><span><a href="">苏 ICP 备 17028566 号</a></span> • Powered by <span><a href="">Typecho</a></span> • Theme
+            <span><a href="">Mirages</a></span></p>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/archives.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.body1 {
+    width: 836px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+
+.body1 h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 50px;
+    line-height: 40px;
+}
+
+.body1 ul li {
+    width: 836px;
+    height: 39px;
+    margin-top: 5px;
+    border-radius: 4px;
+    line-height: 39px;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.body1 ul li a {
+    font-size: 15px;
+    color: white;
+}
+
+.body1 ul li span {
+    color: #B9B8B8;
+    margin-right: 16px;
+}
+
+.body1 ul li:hover {
+    background: #403E3E;
+}
+
+@media (max-width:836px) {
+    .body1 {
+        width: 100%;
+    }
+    .body1 ul li {
+        width: 100%;
+    }
+}

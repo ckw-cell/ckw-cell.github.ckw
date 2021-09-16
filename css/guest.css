@@ -1,0 +1,30 @@
+.body{
+    width: 817px;
+    height: auto;
+    margin: 0 auto;
+}
+.body p{
+    color: white;
+    line-height: 32px;
+    font-size: 17px;
+}
+
+
+
+@media (max-width:1555px) {
+    .body {
+        width: 678px;
+    }
+}
+
+@media (max-width:1210px) {
+    .body {
+        width: 622px;
+    }
+}
+
+@media (max-width:584px) {
+    .body {
+        width: 100%;
+    }
+}
